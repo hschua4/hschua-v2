@@ -1,10 +1,26 @@
+import React, { useState } from 'react';
+
 function App() {
+	const [displayMenu, setDisplayMenu] = useState(false);
+
+	const handleMenuClick = () => {
+		setDisplayMenu(!displayMenu);
+	};
+
 	return (
 		<div className='App' id='top'>
 			{/* Navbar */}
 			<nav className='navbar'>
 				<h1>HS CHUA</h1>
-				<ul>
+
+				<div className='menu-icon' onClick={handleMenuClick}>
+					{/* toggle menu icon on click */}
+					<div className={displayMenu ? 'menu-btn open' : 'menu-btn'}>
+						<div className='menu-btn-burger'></div>
+					</div>
+				</div>
+
+				<ul className={displayMenu ? 'nav-menu active' : 'nav-menu'}>
 					<li>
 						<a href='#projects'>Projects</a>
 					</li>
@@ -59,7 +75,7 @@ function App() {
 					</div>
 				</div>
 
-				<div className='project-item'>
+				<div className='project-item project-item-col-rev'>
 					<div className='project-item-description'>
 						<h2>87 Keys</h2>
 						<p>A simple e-commerce site for mechanical keyboard enthusiasts.</p>
@@ -121,7 +137,7 @@ function App() {
 					</div>
 				</div>
 
-				<div className='project-item project-item-mb0'>
+				<div className='project-item project-item-mb0 project-item-col-rev'>
 					<div className='project-item-description'>
 						<h2>Hschua v1</h2>
 						<p>The first version of my personal porfolio site.</p>
@@ -136,7 +152,13 @@ function App() {
 								<i className='fas fa-code'></i>&nbsp; Static site
 							</li>
 						</ul>
-						<button>Visit site</button>
+						<a
+							href='https://hschua.netlify.app/'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<button>Visit site</button>
+						</a>
 					</div>
 					<div className='image'>
 						<img src='./images/hschua-v1.jpg' alt='' />
@@ -159,7 +181,7 @@ function App() {
 					</div>
 				</div>
 
-				<div className='about-item'>
+				<div className='about-skills'>
 					<div className='skills'>
 						<h3>Skills</h3>
 						<p>
