@@ -10,13 +10,13 @@ function App() {
 				</h1>
 				<ul>
 					<li>
-						<a>Projects</a>
+						<a href='#projects'>Projects</a>
 					</li>
 					<li>
-						<a>About</a>
+						<a href='#about'>About</a>
 					</li>
 					<li>
-						<a>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -30,13 +30,13 @@ function App() {
 						stack.
 					</p>
 					<button>
-						<a>My Projects</a>
+						<a href='#projects'>My Projects</a>
 					</button>
 				</div>
 			</section>
 
 			{/* Projects */}
-			<section className='projects'>
+			<section className='projects' id='projects'>
 				<h1>Projects</h1>
 				<div className='project-item'>
 					<div className='image'>
@@ -59,7 +59,7 @@ function App() {
 								<i className='fas fa-code'></i>&nbsp; REST API
 							</li>
 						</ul>
-						<button>See Details</button>
+						{/* <button>See Details</button>S */}
 					</div>
 				</div>
 
@@ -141,7 +141,7 @@ function App() {
 			</section>
 
 			{/* About */}
-			<section className='about'>
+			<section className='about' id='about'>
 				<h1>About</h1>
 				<div className='about-item'>
 					<div className='about-image'>
@@ -200,11 +200,11 @@ function App() {
 			</section>
 
 			{/* Contact */}
-			<section className='contact'>
+			<section className='contact' id='contact'>
 				<div className='contact-item'>
 					<h1>Contact</h1>
 					<p>Interested in building a new project?</p>
-					<form action=''>
+					<form action='' className='contact-form'>
 						<div className='form-row'>
 							<div className='form-group'>
 								<label htmlFor='name'>Name</label>
@@ -215,8 +215,11 @@ function App() {
 								<input type='email' id='email' />
 							</div>
 						</div>
-						<label htmlFor='message'>Message</label>
-						<textarea name='' id='message' cols='30' rows='10'></textarea>
+						<div className='form-group textarea'>
+							<label htmlFor='message'>Message</label>
+							<textarea name='' id='message' cols='30' rows='10'></textarea>
+						</div>
+						<button>Send Message</button>
 					</form>
 				</div>
 			</section>
