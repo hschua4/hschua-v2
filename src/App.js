@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-
 function App() {
 	return (
-		<div className='App'>
+		<div className='App' id='top'>
 			{/* Navbar */}
 			<nav className='navbar'>
-				<h1>
-					<a>HS CHUA</a>
-				</h1>
+				<h1>HS CHUA</h1>
 				<ul>
 					<li>
 						<a href='#projects'>Projects</a>
@@ -81,7 +77,11 @@ function App() {
 								<i className='fas fa-code'></i>&nbsp; REST API
 							</li>
 						</ul>
-						<a href='https://eighty-seven-keys.herokuapp.com/' target='_blank'>
+						<a
+							href='https://eighty-seven-keys.herokuapp.com/'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<button>Visit site</button>
 						</a>
 					</div>
@@ -111,7 +111,11 @@ function App() {
 								<i className='fas fa-code'></i>&nbsp; Redux
 							</li>
 						</ul>
-						<a href='https://devocean2021.herokuapp.com/' target='_blank'>
+						<a
+							href='https://devocean2021.herokuapp.com/'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<button>Visit site</button>
 						</a>
 					</div>
