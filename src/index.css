@@ -595,6 +595,10 @@ textarea {
 		width: 90%;
 	}
 
+	.about-description p {
+		text-align: justify;
+	}
+
 	.skills,
 	.tools {
 		width: 80%;
@@ -750,7 +754,7 @@ textarea {
 	}
 
 	.about-description p {
-		font-size: 2.8rem;
+		font-size: 2.4rem;
 	}
 
 	.skills h3,

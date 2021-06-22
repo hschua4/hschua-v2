@@ -175,8 +175,11 @@ function App() {
 					</div>
 					<div className='about-description'>
 						<p>
-							After being in the construction industry for 3 years. I've decided
-							to take the leap and become a web developer
+							After being in the construction industry for 3 years. I've finally
+							decided to quit my job and take the leap to become a web
+							developer. With almost zero knowledge on the topic, I've scoured
+							the Internet for tutorials and courses to learn the basics. I
+							believe perseverance is the key to achieve anything.
 						</p>
 					</div>
 				</div>
@@ -213,13 +216,13 @@ function App() {
 							<span>VS Code</span>
 							<span>Postman</span>
 							<span>XAMPP</span>
-							<span>Fork</span>
-							<span>MongoDB Atlas</span>
-							<span>Netlify</span>
-							<span>Heroku</span>
-							<span>Github</span>
 							<span>MongoDB Compass</span>
-							<span>Gitlab</span>
+							<span>Fork</span>
+							<span>Netlify</span>
+							<span>MongoDB Atlas</span>
+							<span>Heroku</span>
+							<span>GitHub</span>
+							<span>GitLab</span>
 						</p>
 					</div>
 				</div>
